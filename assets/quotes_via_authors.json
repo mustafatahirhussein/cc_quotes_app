@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "authors": {
+        "author1": [
+          {
+            "quote": "ABCD"
+          },
+          {
+            "quote": "ABCD"
+          },
+          {
+            "quote": "ABCD"
+          },
+          {
+            "quote": "ABCD"
+          }
+        ],
+        "author2": [
+          {
+            "quote": "ABCD"
+          },
+          {
+            "quote": "ABCD"
+          },
+          {
+            "quote": "ABCD"
+          },
+          {
+            "quote": "ABCD"
+          }
+        ]
+      }
+    }
+  ]
+}

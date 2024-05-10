@@ -1,0 +1,20 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Happy"
+    },
+    {
+      "id": 2,
+      "name": "Romantic"
+    },
+    {
+      "id": 3,
+      "name": "Love"
+    },
+    {
+      "id": 4,
+      "name": "Motivational"
+    }
+  ]
+}
