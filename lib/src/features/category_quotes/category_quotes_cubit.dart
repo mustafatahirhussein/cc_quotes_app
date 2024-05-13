@@ -1,9 +1,5 @@
-import 'dart:convert';
-
 import 'package:cc_quotes_app/src/domain/repositories/category_quotes_repository.dart';
 import 'package:cc_quotes_app/src/features/category_quotes/category_quotes_state.dart';
-import 'package:flutter/services.dart';
-
 import '../../exports.dart';
 
 class CategoryQuotesCubit extends Cubit<CategoryQuotesState> {
