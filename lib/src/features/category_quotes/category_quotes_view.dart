@@ -14,7 +14,9 @@ class CategoryQuotesView extends StatelessWidget {
         builder: (context, state) {
           final cQuotes = state as CategoryQuotesState;
 
-          print(cQuotes.isLoading);
+          if(cQuotes.error != null) {
+            return Center(child: Text(cQuotes.error!, style: TextStyle(color: Colors.black),));
+          }
           return cQuotes.isLoading ? Center(child: CircularProgressIndicator()) : ListView(
             children: cQuotes.categoryQuotes.map((e) => Text(e.name, style: TextStyle(fontSize: 35),)).toList(),
           );

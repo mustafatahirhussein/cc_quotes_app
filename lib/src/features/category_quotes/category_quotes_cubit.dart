@@ -8,9 +8,16 @@ class CategoryQuotesCubit extends Cubit<CategoryQuotesState> {
   final CategoryQuotesRepository categoryQuotesRepository;
 
   fetchCategoryQuotes() async {
-    emit(state.copyWith(isLoading: true));
+    /// We kept the error null, in case we are showing pull-to-refresh etc.
+    emit(state.copyWith(isLoading: true, error: null));
 
     final item = await categoryQuotesRepository.getCategoryQuotes();
-    emit(state.copyWith(categoryQuotes: item, isLoading: false));
+
+    /// DartZ approach
+    item.fold((error) {
+      emit(state.copyWith(error: error.error));
+    }, (category) {
+    emit(state.copyWith(categoryQuotes: category, isLoading: false));
+    });
   }
 }
