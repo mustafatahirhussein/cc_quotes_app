@@ -1,0 +1,3 @@
+class CategoryQuotesInitialParams {
+  const CategoryQuotesInitialParams();
+}

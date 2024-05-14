@@ -3,7 +3,7 @@ import 'package:cc_quotes_app/src/features/category_quotes/category_quotes_state
 import '../../exports.dart';
 
 class CategoryQuotesCubit extends Cubit<CategoryQuotesState> {
-  CategoryQuotesCubit(this.categoryQuotesRepository) : super(CategoryQuotesState.empty());
+  CategoryQuotesCubit(this.categoryQuotesRepository) : super(CategoryQuotesState.initial());
 
   final CategoryQuotesRepository categoryQuotesRepository;
 

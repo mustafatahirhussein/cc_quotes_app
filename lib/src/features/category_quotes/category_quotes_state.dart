@@ -7,7 +7,7 @@ class CategoryQuotesState {
 
   CategoryQuotesState({required this.categoryQuotes, required this.isLoading, this.error,});
 
-  factory CategoryQuotesState.empty() => CategoryQuotesState(categoryQuotes: [], isLoading: false);
+  factory CategoryQuotesState.initial() => CategoryQuotesState(categoryQuotes: [], isLoading: false);
 
   /// When we talk about loading and errors, the we will understand its use case
   CategoryQuotesState copyWith({List<Category>? categoryQuotes, bool? isLoading, String? error}) => CategoryQuotesState(categoryQuotes: categoryQuotes ?? this.categoryQuotes, isLoading: isLoading ?? this.isLoading, error: error ?? this.error);

@@ -1,3 +1,5 @@
+import 'package:cc_quotes_app/src/features/category_quotes/category_quotes_initial_params.dart';
+
 import 'exports.dart';
 
 class App extends StatelessWidget {
@@ -7,7 +9,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CategoryQuotesView(),
+      home: CategoryQuotesView(initialParams: CategoryQuotesInitialParams(),),
     );
   }
 }
